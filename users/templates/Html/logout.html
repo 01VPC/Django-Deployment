@@ -1,0 +1,19 @@
+{% extends 'Html/base.html' %}
+
+
+{% block content %}
+<div class="content-section">
+    <form action="" method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend claass="border-bottom mb-4">You Logged Out</legend>
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit"><a href="{% url 'blog-logout-page'%}">Login Again</a></button>
+        </div>
+    </form>
+    {% comment %} <div class="border-top pt-3">
+        <small class="text-muted">Don't have an account? <a href="{% url 'blog-register-page'%}">Register now</a></small>
+    </div> {% endcomment %}
+</div>
+{% endblock %}
