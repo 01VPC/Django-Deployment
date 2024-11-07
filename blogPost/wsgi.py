@@ -1,17 +1,14 @@
-"""
-WSGI config for blogPost project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
-"""
-
 import os
-
 from django.core.wsgi import get_wsgi_application
 
+# Set the default settings module for Django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blogPost.settings')
 
+# Create the WSGI application object
 application = get_wsgi_application()
-app = application
+
+# Get the port from the environment variable (Render automatically provides it)
+port = os.environ.get('PORT', '8000')  # Defaults to 8000 if not set
+
+# Print the port for debugging (optional, but useful)
+print(f"Running on port: {port}")
