@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["blog-post-site-vuit.onrender.com"]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://blog-post-site-vuit.onrender.com' # Your Render site URL
+]
+
 
 # Application definition
 
