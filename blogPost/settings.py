@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u!4re_dy3fk8a@-ij4eeci-n!ov(bkta5#*sz+bkg57xv%p3_8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["blog-post-site-vuit.onrender.com"]
 
 
 # Application definition
